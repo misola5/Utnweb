@@ -1,0 +1,324 @@
+/*-------------------------GENERAL--------------------------------------*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 700px;
+}
+main {
+    padding: 55px 0px;
+    /*background: url(imagenes/logoescrito.png) no-repeat center;     me parece que el logo ensucia mucho el fondo
+    background-size: 30%;*/
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*--------------------------------HEADER----------------------------*/
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: black solid;
+}
+header ul {
+    padding: 0px;
+    margin-right: 10%;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 10px;     
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header img{
+    margin-left: 100px;
+}
+header img:hover{
+    border-radius: 5px;
+    border: 1px black solid;
+}
+header li:hover {    
+    background-color: #7e4cc1;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+header a:hover{
+    color: white;
+}
+
+
+/*-----------------------iNDEX-------------------------*/
+.inicio {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0%;
+    text-align: center;
+    align-items: center;
+}
+main section div ul li {
+    line-height: 40px;
+    list-style: none;
+    font-size: 1.5em;
+}
+main h1 {
+    margin: 0px;
+    background-color: #7e4cc1;
+    color: white;
+    text-decoration: white underline solid;
+    border: solid black;
+}
+
+
+/*-------------------------------TURNOS Y REGISTRO-----------------------*/
+.turnos{    
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+    margin-top: 0.5%;
+}
+
+.delturno{
+    margin-top: 7%;
+}
+#aceptar{
+    display: flex;
+    background-color: #7e4cc1;
+    border: solid black 1px;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10% 40%;
+    cursor: pointer;
+}
+#aceptar:hover{
+    color: white;
+}
+
+
+/*-------------------------NOTICIAS-----------------------*/
+#noti{
+    padding: 0%;
+}
+.noticia{
+    border: solid black;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+.noticia h2{
+    text-decoration: underline solid black;
+    
+}
+.completa{
+    width: 100%; /*EN MI PANTALLA NO SE VE BIEN, se ve con overflow*/
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.completa img{
+    width: 30%;
+    height: 30%;
+}
+#img1{
+    width: 20%;
+    height: 20%;
+}
+
+.parte{
+    width: 45%;
+    max-height: 600px;
+}
+.mitad{
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 5%;
+}
+#rabia img {
+    width: 40%;
+    height: 40%;
+}
+#rabia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.mainnoticia div a{
+    color: #4c55c1;
+    line-height: 40px;
+}
+
+
+/*.registro{
+    display: inline-block;
+    padding: 5% 10%;
+}*/
+
+/*-----------------PET SHOP----------------------*/
+
+#previo {
+    margin-top: 10%;
+}
+.petsh {
+  margin-top: 50px;   
+}
+.main2 {
+    padding: 0%;
+    height: 100%;    /*<---------------afecta pet shop y contacto*/
+    min-height: 500px;
+}
+
+.main3 {
+    padding-top: 10%;
+    height: 100%;    
+    min-height: 500px;
+    padding-left: 10%;
+}
+
+.mainc{
+    padding-top: 98px;
+    height: 100%;    
+    min-height: 500px;
+}
+  
+
+.barrasup{
+    position: fixed;
+    top: 55px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: black solid 1px;
+    align-items: center;
+    padding: 0 10%;
+    background-color: white;
+}
+#carrito{
+    width: 40px;
+    height: 40px;
+}
+.barralat{
+    width: 15%;
+    display: flex;
+    justify-content: left;    
+}
+
+.barralat ul li{
+    text-decoration: none;
+    background-color: #7e4cc1;
+    color: white;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 1px;
+}
+
+#cuerpo {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   
+}
+
+#barraderecha {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.oculto{
+    display: none;
+}
+.barralat:hover .oculto{
+    display: flex;
+}
+.alimento, .accesorio, .juguetes{
+    display: none;
+}
+.produc{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+/*---------------------------------CONTACTO-------------------------------*/
+.contacto{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+}
+.contacto section ul li{
+    list-style: none;
+}
+.contacto section{
+    padding-top: 100px;
+}
+.contacto h2{
+    text-decoration: underline solid black;
+}
+.contacto img{
+    width: 50px;
+    height: 50px;    
+}
+#mapa{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/*------------------------------FOOTER------------------------------------*/
+footer {
+    border: black solid;
+    background-color: #7e4cc1;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+footer a{
+    color: black;
+    text-decoration: none;
+    margin: 0% 5%;
+}
+footer a:hover{
+    color: white;
+}
+footer img{
+   width: 30px;
+   height: 30px;
+}
+
+
